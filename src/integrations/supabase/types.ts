@@ -14,7 +14,78 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      birth_certificates: {
+        Row: {
+          aadhaar_consent_given: boolean
+          aadhaar_consent_timestamp: string | null
+          created_at: string
+          date_of_birth: string
+          father_aadhaar_file_path: string | null
+          father_aadhaar_number: string
+          father_name: string
+          first_name: string
+          gender: string
+          id: string
+          issuing_authority: string | null
+          last_name: string
+          middle_name: string | null
+          mother_aadhaar_file_path: string | null
+          mother_aadhaar_number: string
+          mother_name: string
+          place_of_birth: string
+          registration_number: string | null
+          status: string
+          time_of_birth: string | null
+          updated_at: string
+        }
+        Insert: {
+          aadhaar_consent_given?: boolean
+          aadhaar_consent_timestamp?: string | null
+          created_at?: string
+          date_of_birth: string
+          father_aadhaar_file_path?: string | null
+          father_aadhaar_number: string
+          father_name: string
+          first_name: string
+          gender: string
+          id?: string
+          issuing_authority?: string | null
+          last_name: string
+          middle_name?: string | null
+          mother_aadhaar_file_path?: string | null
+          mother_aadhaar_number: string
+          mother_name: string
+          place_of_birth: string
+          registration_number?: string | null
+          status?: string
+          time_of_birth?: string | null
+          updated_at?: string
+        }
+        Update: {
+          aadhaar_consent_given?: boolean
+          aadhaar_consent_timestamp?: string | null
+          created_at?: string
+          date_of_birth?: string
+          father_aadhaar_file_path?: string | null
+          father_aadhaar_number?: string
+          father_name?: string
+          first_name?: string
+          gender?: string
+          id?: string
+          issuing_authority?: string | null
+          last_name?: string
+          middle_name?: string | null
+          mother_aadhaar_file_path?: string | null
+          mother_aadhaar_number?: string
+          mother_name?: string
+          place_of_birth?: string
+          registration_number?: string | null
+          status?: string
+          time_of_birth?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
